@@ -8,7 +8,7 @@ export default class Form extends React.Component {
           <input name = "addedTodo" id = "addedTodo"
           value = {this.props.addedTodo} onChange={this.props.change}
           placeholder='Add To List' />
-          <input type = "submit" id = "submit" />
+          <input disabled = {this.props.disabled} type = "submit" id = "submit" />
         </form>
         <input onClick = {this.props.clear} type = "button" id = "clear" name = "clear"
           value = "Hide Completed" />
