@@ -83,3 +83,9 @@ ul, form {
 .todo:hover {
   cursor: pointer;
 }
+.clicked {
+  text-decoration: line-through;
+}
+.clicked::after {
+  content : "✅";
+}
